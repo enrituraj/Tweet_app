@@ -1,13 +1,13 @@
   {
     "builds": [{
-        "src": "chaiheadq/chaiheadq/wsgi.py",
+        "src": "chaiheadq/wsgi.py",
         "use": "@ardnt/vercel-python-wsgi",
         "config": { "maxLambdaSize": "15mb" }
     }],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "chaiheadq/chaiheadq/wsgi.py"
+            "src": "chaiheadq/(.*)",
+            "dest": "chaiheadq/wsgi.py"
         }
     ]
 }
