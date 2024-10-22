@@ -13,7 +13,6 @@ env/
 .env
 
 # Django-specific files
-db.sqlite3
 /media/
 staticfiles/
 
