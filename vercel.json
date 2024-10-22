@@ -3,8 +3,8 @@
     "builds": [
       {
         "src": "chaiheadq/chaiheadq/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+        "use": "@vercel/python", 
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9","outputDirectory": "staticfiles_build"  }
       },
       {
         "src": "build_files.sh",
