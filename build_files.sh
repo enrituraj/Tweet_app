@@ -11,5 +11,6 @@ python3.9 -m pip install -r requirements.txt
 
 # Collect static files in the required directory
 python3.9 chaiheadq/manage.py collectstatic --noinput --clear --settings=your_project_name.settings
-
+mkdir -p staticfiles_build
+mv staticfiles/* staticfiles_build/
 echo " BUILD END"
