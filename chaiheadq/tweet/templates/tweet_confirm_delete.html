@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}
+Tweet Confirm Delete | chaiHeadQ
+{% endblock %}
+
+{% block content %}
+
+<h1>Are you sure ?</h1>
+<form method="post">
+    {% csrf_token %}
+    <button class="btn btn-danger">Delete</button>
+    <a href="{% url 'tweet_list' %}" class="btn btn-success">cancle</a>
+</form>
+
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}
+Tweet form | chaiHeadQ
+{% endblock %}
+
+{% block content %}
+
+
+<h2>
+    {% if form.instance.pk %}
+        Edit Tweet
+    {% else  %}
+        Create Tweet
+    {% endif %}
+</h2>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {{form}}
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+<a href="{% url 'tweet_list' %}">back to tweet_list</a>
+
+{% endblock content %}

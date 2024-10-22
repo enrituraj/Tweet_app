@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>registration</h2>
+<form  method="post">
+    {% csrf_token %}
+
+    {{form}}
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

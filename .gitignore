@@ -1,0 +1,50 @@
+# Python bytecode and other Python-related files
+*.py[cod]
+__pycache__/
+*.so
+
+# Virtual environment directory
+venv/
+ENV/
+env/
+.venv/
+
+# Environment variable files
+.env
+
+# Django-specific files
+db.sqlite3
+/media/
+staticfiles/
+
+# Logs
+*.log
+
+# IDE/editor files (e.g., VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS-specific files
+.DS_Store
+
+# Docker-related files
+*.env
+docker-compose.override.yml
+
+# Test coverage and pytest files
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+
+# Node and frontend dependencies (if applicable)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Prettier and eslint cache files (if using Prettier or ESLint)
+.prettiercache
+.eslintcache
