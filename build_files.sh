@@ -9,8 +9,10 @@ python3.9 -m ensurepip --upgrade
 python3.9 -m pip install --upgrade pip
 python3.9 -m pip install -r requirements.txt
 
+cd chaiheadq/
 # Collect static files in the required directory
-python3.9 chaiheadq/manage.py collectstatic --noinput --clear --settings=your_project_name.settings
+python3.9 manage.py collectstatic --noinput --clear --settings=chaiheadq.settings
 mkdir -p staticfiles_build
-mv chaiheadq/staticfiles/* staticfiles_build/
+mv staticfiles/* staticfiles_build/
+cd ..
 echo " BUILD END"
