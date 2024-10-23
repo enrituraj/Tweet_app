@@ -81,7 +81,8 @@ WSGI_APPLICATION = 'chaiheadq.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv('POSTGRES_URL')
+        default=os.getenv('POSTGRES_URL'),
+        engine='django.db.backends.postgresql',
     )
 }
 
