@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "chaiheadq/chaiheadq/wsgi.py",
+        "src": "chaiheadq/wsgi.py",
         "use": "@vercel/python", 
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
@@ -10,7 +10,7 @@
         "src": "build_files.sh",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "chaiheadq/staticfiles_build"
+          "distDir": "staticfiles_build"
         }
       }
     ],
@@ -21,7 +21,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "chaiheadq/chaiheadq/wsgi.py"
+        "dest": "chaiheadq/wsgi.py"
       }
     ]
   }
